@@ -1,0 +1,617 @@
+/* RESET */
+
+* {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* GENERAL */
+
+body {
+    margin: 0;
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #f5f0e8;
+    color: #3d2b1f;
+    line-height: 1.6;
+}
+
+.container {
+    width: 92%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 42px 0;
+}
+
+section h2 {
+    color: #694b35;
+}
+
+.section-title {
+    margin: 0 0 24px;
+    color: #694b35;
+    font-size: 32px;
+    text-align: center;
+}
+
+.section-intro {
+    max-width: 700px;
+    margin: 0 auto 28px;
+    text-align: center;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 22px;
+    border: 1px solid #d7a86e;
+    border-radius: 4px;
+    background-color: #d7a86e;
+    color: #3d2b1f;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* HEADER */
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 18px;
+    padding: 20px 4%;
+    border-bottom: 4px solid #d7a86e;
+    background-color: #3d2b1f;
+    color: #f5f0e8;
+}
+
+.brand {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* NAVIGATION - Flexbox is useful because links form one row or column. */
+
+.nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-link {
+    color: #f5f0e8;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+.nav-link:hover {
+    color: #d7a86e;
+}
+
+/* HERO - Flexbox aligns the content and image in one dimension. */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 30px;
+    min-height: 0;
+    padding: 48px 4%;
+    background-color: #5c4636;
+    color: #ffffff;
+}
+
+.hero-content,
+.hero-image {
+    width: 100%;
+}
+
+.hero-title {
+    margin: 0 0 18px;
+    font-size: 38px;
+    line-height: 1.1;
+    text-shadow: 2px 2px 4px #3d2b1f;
+}
+
+.hero-description {
+    font-size: 18px;
+}
+
+.hero-image {
+    padding: 8px;
+    border: 1px solid #d7a86e;
+    background-color: #3d2b1f;
+}
+
+.hero-image img {
+    display: block;
+    width: 100%;
+}
+
+/* PRODUCTS - Grid controls rows and columns, so cards line up in two dimensions. */
+
+.products-section {
+    background-color: #eee3d3;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.product-card,
+.product {
+    min-height: 0;
+    padding: 18px;
+    border: 1px solid #d8c7b4;
+    border-radius: 8px;
+    background-color: #fffaf2;
+}
+
+.product-card-image {
+    height: 145px;
+    margin-bottom: 16px;
+    background-size: cover;
+    background-position: center;
+}
+
+.product-card-image-coffee {
+    background-image: url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80");
+}
+
+.product-card-image-pastry {
+    background-image: url("https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=600&q=80");
+}
+
+.product-card-image-tea {
+    background-image: url("https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80");
+}
+
+.product-card-title,
+.product-name {
+    margin: 0 0 10px;
+    color: #694b35;
+}
+
+.product-card-description,
+.product-description {
+    color: #675449;
+}
+
+.product-card-price,
+.product-price {
+    color: #8a5a36;
+    font-weight: bold;
+}
+
+.menu-category {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin: 28px 0;
+    padding: 20px;
+    border-top: 3px solid #9caf88;
+}
+
+.menu-category h2 {
+    margin: 0;
+    color: #526746;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* EXPLICIT GRID: repeat(3, 1fr) means three equal fraction columns. */
+
+/* EXPERIENCES - Grid is useful for a two-dimensional gallery of cards. */
+
+.experiences {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.experiences-page > .section-title,
+.experiences-page > .section-intro,
+.experiences > h3 {
+    grid-column: 1 / -1;
+}
+
+.experience-card,
+.content-block {
+    padding: 20px;
+    border: 1px solid #d8c7b4;
+    border-radius: 8px;
+    background-color: #fffaf2;
+}
+
+.experience-card figure {
+    margin: 0;
+}
+
+.experience-card img {
+    display: block;
+    width: 100%;
+}
+
+.experience-card h2,
+.experience-card h4 {
+    color: #694b35;
+}
+
+figcaption {
+    margin-top: 8px;
+    color: #675449;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* ABOUT - Grid creates a clear image/text composition. */
+
+.about-layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+    margin-bottom: 28px;
+}
+
+.about-layout figure {
+    margin: 0;
+}
+
+.about-image {
+    display: block;
+    width: 100%;
+    border-radius: 6px;
+}
+
+.content-block {
+    margin: 18px 0;
+}
+
+.about-content {
+    margin: 0;
+}
+
+.values li,
+.hours li,
+.social-links li {
+    margin: 8px 0;
+}
+
+/* CONTACT - Flexbox remains useful for two equal information panels. */
+
+.contact-layout {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.contact-layout > .section-title {
+    width: 100%;
+}
+
+.contact-info,
+.contact-form {
+    width: 100%;
+    min-height: 0;
+    padding: 20px;
+    border: 1px solid #d8c7b4;
+    border-radius: 6px;
+    background-color: #fffaf2;
+}
+
+label {
+    display: block;
+    margin: 12px 0 5px;
+    font-weight: bold;
+}
+
+input,
+select,
+textarea {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 14px;
+    padding: 10px;
+    border: 1px solid #bca994;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #3d2b1f;
+    font: inherit;
+}
+
+button {
+    margin-top: 8px;
+    padding: 11px 20px;
+    border: 1px solid #526746;
+    border-radius: 4px;
+    background-color: #526746;
+    color: #ffffff;
+    font: inherit;
+    cursor: pointer;
+}
+
+/* FOOTER - Flexbox keeps footer groups aligned and can stack them on mobile. */
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    padding: 30px 4%;
+    background-color: #3d2b1f;
+    color: #f5f0e8;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer a {
+    color: #d7a86e;
+}
+
+/* =========================
+   PSEUDOCLASES
+   ========================= */
+
+/* El enlace sigue siendo un <a>; cambia su aspecto según su estado. */
+.nav-list .nav-link:hover {
+    color: #d7a86e;
+}
+
+.nav-list .nav-link:focus {
+    outline: 3px solid #d7a86e;
+    outline-offset: 3px;
+}
+
+.nav-list .nav-link:active {
+    color: #ffffff;
+}
+
+.nav-list .nav-link:visited {
+    color: #c9b79f;
+}
+
+.button:hover,
+button:hover {
+    background-color: #8a5a36;
+    color: #ffffff;
+}
+
+.button:focus,
+button:focus {
+    outline: 3px solid #d7a86e;
+    outline-offset: 3px;
+}
+
+.button:active,
+button:active,
+.boton-patagonia:active {
+    background-color: #3d2b1f;
+}
+
+.boton-patagonia:focus {
+    outline: 3px solid #d7a86e;
+    outline-offset: 3px;
+}
+
+/* Hover en una card: comunica que el elemento puede explorarse. */
+.products .product-card:hover,
+.menu-category .product:hover {
+    border-color: #8a5a36;
+}
+
+/* :first-child selecciona el primer producto de cada fila de tarjetas. */
+.menu-category .row > .product:first-child {
+    border-top: 3px solid #9caf88;
+}
+
+/* :last-child identifica la última card sin agregar una clase nueva. */
+.menu-category .row > .product:last-child {
+    border-bottom: 3px solid #d7a86e;
+}
+
+/* :nth-child(2) selecciona exactamente el segundo producto. */
+.menu-category .row > .product:nth-child(2) {
+    background-color: #f3e7d2;
+}
+
+/* :nth-child(even) selecciona los productos pares: 2, 4, 6... */
+.menu-category .row > .product:nth-child(even) {
+    box-shadow: inset 0 0 0 1px #e1c39d;
+}
+
+/* :not() aplica el separador a todas las cards excepto la última. */
+.menu-category .row > .product:not(:last-child) {
+    border-right-color: #c7ae91;
+}
+
+.contact-form .form-control:focus,
+.contact-form .form-select:focus,
+input:focus,
+textarea:focus {
+    border-color: #8a5a36;
+    box-shadow: 0 0 0 0.2rem rgba(215, 168, 110, 0.35);
+    outline: 2px solid transparent;
+}
+
+/* =========================
+   BOOTSTRAP OVERRIDES
+   ========================= */
+
+/* Bootstrap aporta la estructura; estas reglas conservan la identidad propia. */
+.navbar-patagonia {
+    background-color: #3d2b1f;
+}
+
+.navbar-patagonia > .container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+    padding: 0;
+}
+
+.navbar-patagonia .navbar-brand,
+.navbar-patagonia .nav-link {
+    color: #f5f0e8;
+}
+
+.navbar-patagonia .nav-link:visited {
+    color: #c9b79f;
+}
+
+.navbar-patagonia .navbar-brand:hover,
+.navbar-patagonia .nav-link:hover {
+    color: #d7a86e;
+}
+
+.boton-patagonia,
+.btn-primary {
+    border-color: #526746;
+    background-color: #526746;
+    color: #ffffff;
+}
+
+.boton-patagonia:hover,
+.btn-primary:hover {
+    border-color: #3d2b1f;
+    background-color: #3d2b1f;
+    color: #ffffff;
+}
+
+.card {
+    border-color: #d8c7b4;
+    background-color: #fffaf2;
+}
+
+.card-title {
+    color: #694b35;
+}
+
+/* RESPONSIVE */
+
+@media (min-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    .header {
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 5%;
+    }
+
+    .brand {
+        text-align: left;
+    }
+
+    .nav-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 18px;
+    }
+
+    .navbar-patagonia > .container-fluid {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .hero {
+        flex-direction: row;
+        align-items: center;
+        gap: 40px;
+        min-height: 430px;
+        padding: 56px 8%;
+    }
+
+    .hero-content {
+        width: 55%;
+    }
+
+    .hero-image {
+        width: 45%;
+    }
+
+    .hero-title {
+        font-size: 44px;
+    }
+
+    .products,
+    .menu-category {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-category h2 {
+        grid-column: 1 / -1;
+    }
+
+    .experiences {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .experiences-page > .section-title,
+    .experiences-page > .section-intro,
+    .experiences > h3 {
+        grid-column: 1 / -1;
+    }
+
+    .about-layout {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .contact-layout {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: auto;
+        flex: 1 1 0;
+    }
+
+    .footer {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+}
+
+@media (min-width: 1024px) {
+    .products {
+        /* grid = layout bidimensional; columns = tracks verticales;
+           repeat = repite el patrón; 3 = cantidad; 1fr = una fracción igual. */
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .menu-category {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .menu-category h2 {
+        grid-column: 1 / -1;
+    }
+}

@@ -1,0 +1,202 @@
+<!DOCTYPE html> <!-- Le dice al explorador que el contenido es HTML5 -->
+
+<html lang="es">
+<head> <!-- nos permite agregar caracteristicas -->
+    <meta charset="UTF-8"> <!-- Especifica el conjunto de caracteres, nos permite usar tildes y otros caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patagonia Café | Café de especialidad</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header class="site-header header navbar navbar-expand-lg navbar-patagonia">
+        <div class="container-fluid">
+            <a class="brand navbar-brand" href="#inicio">Patagonia Café</a>
+            <nav class="nav" aria-label="Navegación principal">
+                <ul class="nav-list navbar-nav">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#menu">Menú</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experiencias">Experiencias</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="inicio" class="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">El sabor de la Patagonia en cada taza</h1>
+                <p class="hero-description">Somos una cafetería de especialidad que une cafés de origen seleccionado con la calma, los paisajes y la hospitalidad del sur argentino.</p>
+                <p><a class="button" href="#menu">Conocé nuestro menú</a></p>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Taza de café de especialidad junto a granos de café sobre una mesa de madera">
+            </div>
+        </section>
+
+        <section id="destacados" class="products-section">
+            <h2 class="section-title">Productos destacados</h2>
+            <div class="products">
+                <article class="product-card shadow-sm">
+                    <div class="product-card-image product-card-image-coffee"></div>
+                    <h3 class="product-card-title">Espresso del día</h3>
+                    <p class="product-card-description">Una extracción corta y aromática preparada con nuestro café de temporada.</p>
+                    <p class="product-card-price">$2.200</p>
+                </article>
+                <article class="product-card shadow-sm">
+                    <div class="product-card-image product-card-image-pastry"></div>
+                    <h3 class="product-card-title">Medialuna de manteca</h3>
+                    <p class="product-card-description">Pastelería artesanal, dorada y recién horneada cada mañana.</p>
+                    <p class="product-card-price">$1.300</p>
+                </article>
+                <article class="product-card shadow-sm">
+                    <div class="product-card-image product-card-image-tea"></div>
+                    <h3 class="product-card-title">Chocolate caliente patagónico</h3>
+                    <p class="product-card-description">Chocolate espeso y cremoso, ideal para acompañar una tarde fría.</p>
+                    <p class="product-card-price">$3.800</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="experiencia">
+            <h2>Una pausa con espíritu patagónico</h2>
+            <p>En Patagonia Café podés disfrutar una pausa tranquila, descubrir nuevos perfiles de café y compartir una mesa con productos elaborados cerca y con dedicación.</p>
+                <p><a class="btn btn-outline-secondary boton-patagonia" href="#experiencias">Descubrí nuestras experiencias</a></p>
+        </section>
+
+        <section id="nosotros">
+            <h2>Nosotros</h2>
+            <section id="historia">
+                <h3>Una historia nacida en el sur</h3>
+                <p>Patagonia Café nació en 2018, cuando dos amigos apasionados por el café y la cordillera decidieron crear un lugar de encuentro en San Carlos de Bariloche.</p>
+                <p>Seleccionamos granos de pequeños productores, trabajamos con tostadores argentinos y elaboramos nuestra pastelería de manera artesanal para ofrecer una experiencia cálida durante todo el año.</p>
+                <figure>
+                    <img src="https://images.unsplash.com/photo-1445116572660-236099ec97a0?auto=format&amp;fit=crop&amp;w=1000&amp;q=80" alt="Interior cálido de una cafetería con mesas de madera y luz natural">
+                    <figcaption>Un espacio para encontrarse, conversar y disfrutar sin apuro.</figcaption>
+                </figure>
+            </section>
+            <section id="mision">
+                <h3>Nuestra misión</h3>
+                <p>Crear momentos memorables alrededor de una buena taza de café, conectando a nuestra comunidad con el trabajo de productores, baristas y emprendedores locales.</p>
+            </section>
+            <section id="valores">
+                <h3>Nuestros valores</h3>
+                <ul>
+                    <li><strong>Calidad:</strong> cuidamos cada etapa, desde el grano hasta la mesa.</li>
+                    <li><strong>Origen:</strong> valoramos las historias detrás de cada producto.</li>
+                    <li><strong>Comunidad:</strong> construimos vínculos con proveedores y visitantes.</li>
+                    <li><strong>Sustentabilidad:</strong> buscamos decisiones responsables para nuestro entorno.</li>
+                </ul>
+            </section>
+            <section id="equipo">
+                <h3>El equipo</h3>
+                <p>Baristas, cocineros y anfitriones trabajamos juntos para que cada visita tenga el ritmo y la calidez de una casa patagónica.</p>
+            </section>
+        </section>
+
+        <section id="menu">
+            <h2>Menú</h2>
+            <p>Una selección de bebidas y comidas artesanales para disfrutar en cualquier momento del día.</p>
+            <section id="cafes">
+                <h3>Cafés</h3>
+                <article><h4>Espresso</h4><p>Corto, intenso y aromático.</p><p>Precio: $2.200</p></article>
+                <article><h4>Americano</h4><p>Espresso con agua caliente, de sabor limpio y equilibrado.</p><p>Precio: $2.400</p></article>
+                <article><h4>Latte</h4><p>Espresso con leche vaporizada y una textura suave.</p><p>Precio: $3.200</p></article>
+                <article><h4>Flat white</h4><p>Doble espresso con leche cremosa y sedosa.</p><p>Precio: $3.400</p></article>
+            </section>
+            <section id="infusiones">
+                <h3>Infusiones</h3>
+                <article><h4>Té negro de montaña</h4><p>Infusión intensa con notas maltosas y especiadas.</p><p>Precio: $2.300</p></article>
+                <article><h4>Blend frutos del bosque</h4><p>Mezcla frutal de hibisco, arándanos y rosa mosqueta.</p><p>Precio: $2.500</p></article>
+                <article><h4>Mate cocido</h4><p>Una infusión argentina clásica, suave y reconfortante.</p><p>Precio: $2.000</p></article>
+            </section>
+            <section id="pasteleria">
+                <h3>Pastelería</h3>
+                <article><h4>Medialuna de manteca</h4><p>Clásica, dorada y horneada durante la mañana.</p><p>Precio: $1.300</p></article>
+                <article><h4>Torta húmeda de chocolate</h4><p>Porción de torta de chocolate con nueces patagónicas.</p><p>Precio: $3.800</p></article>
+                <article><h4>Budín de limón</h4><p>Budín casero con glaseado cítrico.</p><p>Precio: $3.200</p></article>
+            </section>
+            <section id="saladas">
+                <h3>Opciones saladas</h3>
+                <article><h4>Tostado cordillerano</h4><p>Pan de campo, jamón, queso y tomates asados.</p><p>Precio: $5.500</p></article>
+                <article><h4>Tarta de vegetales</h4><p>Tarta individual de vegetales de estación y queso.</p><p>Precio: $5.200</p></article>
+                <article><h4>Bruschetta de hongos</h4><p>Pan tostado, hongos salteados, hierbas y queso crema.</p><p>Precio: $5.800</p></article>
+            </section>
+        </section>
+
+        <section id="experiencias" class="experiences-section">
+            <h2>Experiencias</h2>
+            <p>Propuestas para conocer el mundo del café y compartir la cultura patagónica.</p>
+            <section id="propuestas" class="experiences">
+                <h3>Elegí tu próxima experiencia</h3>
+                <article class="experience-card">
+                    <h4>Catas de café</h4>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Persona sirviendo café filtrado en una cata">
+                        <figcaption>Compará aromas, sabores y métodos de preparación.</figcaption>
+                    </figure>
+                    <p>Una introducción guiada a distintos orígenes y perfiles de café de especialidad.</p>
+                </article>
+             
+                <article class="experience-card">
+                    <h4>Brunch de montaña</h4>
+                    <figure>
+                        <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Mesa de brunch con panes, frutas y bebidas calientes">
+                        <figcaption>Sabores caseros para empezar el fin de semana.</figcaption>
+                    </figure>
+                    <p>Una mesa abundante con panes, pastelería, opciones saladas y café a elección.</p>
+                </article>
+            </section>
+            <section id="eventos">
+                <h3>Eventos y experiencias especiales</h3>
+                <p>También recibimos encuentros privados, celebraciones y actividades de empresas con propuestas adaptadas a cada ocasión.</p>
+                <p><a href="#contacto">Consultá por tu evento</a></p>
+            </section>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <section id="visitanos">
+                <h3>Visitanos</h3>
+                <address>
+                    <p>Dirección: Calle Mitre 742, San Carlos de Bariloche, Río Negro, Argentina</p>
+                    <p>Teléfono: <a href="tel:+542944123456">+54 294 412-3456</a></p>
+                    <p>Email: <a href="mailto:hola@patagoniacafe.example">hola@patagoniacafe.example</a></p>
+                </address>
+            </section>
+            <section id="horarios">
+                <h3>Horarios de atención</h3>
+                <ul>
+                    <li>Lunes a viernes: 08:00 a 20:00</li>
+                    <li>Sábados y domingos: 09:00 a 21:00</li>
+                    <li>Feriados: 10:00 a 18:00</li>
+                </ul>
+            </section>
+            <section id="redes">
+                <h3>Redes sociales</h3>
+                <ul>
+                    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram: @patagoniacafe</a></li>
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook: Patagonia Café</a></li>
+                </ul>
+            </section>
+            <section id="mensaje">
+                <h3>Escribinos</h3>
+                <form action="#" method="post">
+                    <p><label for="nombre">Nombre completo</label><input type="text" id="nombre" name="nombre" required></p>
+                    <p><label for="email">Correo electrónico</label><input type="email" id="email" name="email" required></p>
+                    <p><label for="motivo">Motivo de consulta</label><select id="motivo" name="motivo"><option value="general">Consulta general</option><option value="evento">Evento privado</option><option value="experiencia">Experiencia o taller</option><option value="proveedores">Proveedores</option></select></p>
+                    <p><label for="mensaje-texto">Mensaje</label><textarea id="mensaje-texto" name="mensaje" rows="6" required></textarea></p>
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </section>
+        </section>
+    </main>
+
+    <footer class="site-footer footer">
+        <p>&copy; 2026 Patagonia Café.</p>
+        <p>San Carlos de Bariloche, Río Negro, Argentina</p>
+    </footer>
+</body>
+</html>
